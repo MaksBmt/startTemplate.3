@@ -1,0 +1,30 @@
+@import "fonts";
+@import "variables";
+@import "core";
+@import "mixins";
+
+// @import "blocks/test";
+@import "blocks/wrap";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/popup";
+@import "blocks/overlay";
+
+body {
+  font-family: CormorantUpright;
+  // font-size: 30px;
+  // font-weight: 700;
+  background-color: aqua;
+  @media (min-width: 768px) {
+    background-color: bisque;
+  }
+
+  h1 {
+    // color: red;
+
+    @media (min-width: 768px) {
+      color: green;
+    }
+  }
+}

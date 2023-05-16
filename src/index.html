@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+  <div class="overlay"></div>
+  @@include('html/header.html',{})
+  <main>
+
+    <img src="@img/logo.jpg" alt="">
+    <h1 class="h1">gulp test 42</h1>
+    <div class="cub"></div>
+
+    <section class="popup">
+      <div class="popup__wrap">
+        <button class="popup__close">
+          <svg class="popup__svg" width="20" height="20">
+            <use xlink:href="img/icons/icons.svg#cross"></use>
+          </svg>
+        </button>
+
+      </div>
+    </section>
+    <a href="#" class="link__popup"
+      style="display: block; width: 300px; margin: 0 auto; font-size: 35px; cursor: pointer;">Открыть
+      popup</a>
+  </main>
+
+  @@include('html/footer.html',{})
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
